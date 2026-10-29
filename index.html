@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SportEdu, plataforma escolar para gestionar actividades deportivas, rutinas y evaluaciones de Educación Física.">
+  <title>SportEdu | Gestión de Educación Física</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado principal y navegación entre secciones -->
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al panel principal">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-name">Sport<span>Edu</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#rutinas">Rutinas</a>
+      <a href="#evaluacion">Evaluación</a>
+      <a href="#recomendaciones">Consejos</a>
+    </nav>
+
+    <a class="nav-action" href="#evaluacion">Ver resultados <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main>
+    <!-- 1. PANEL PRINCIPAL -->
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Panel del docente</p>
+        <h1>Planifica, motiva<br>y <strong>evoluciona.</strong></h1>
+        <p class="hero-intro">Una visión clara para acompañar el desarrollo físico, emocional y social de tu grupo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#actividades">Planificar semana</a>
+          <a class="button button-secondary" href="#rutinas">Explorar rutinas</a>
+        </div>
+      </div>
+
+      <aside class="class-progress" aria-label="Progreso general de la clase">
+        <div class="panel-heading">
+          <div>
+            <p>GRUPO EJEMPLO</p>
+            <h2>8.º B</h2>
+          </div>
+          <span class="live-badge"><i></i> Activo</span>
+        </div>
+        <div class="progress-ring" aria-label="78 por ciento de progreso general">
+          <div>
+            <strong>78%</strong>
+            <span>progreso</span>
+          </div>
+        </div>
+        <div class="progress-label">
+          <span>Objetivos alcanzados</span>
+          <strong>78 de 100</strong>
+        </div>
+        <div class="mini-progress"><span></span></div>
+        <div class="progress-metrics">
+          <div><strong>92%</strong><span>Participación</span></div>
+          <div><strong>86%</strong><span>Esfuerzo</span></div>
+          <div><strong>74%</strong><span>Constancia</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Indicadores del panel principal -->
+    <section class="stats" aria-label="Estadísticas generales">
+      <article class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div><strong>32</strong><span>Estudiantes registrados</span></div>
+        <small>+4 este mes</small>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">🏃</div>
+        <div><strong>12</strong><span>Actividades deportivas</span></div>
+        <small>5 esta semana</small>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">📋</div>
+        <div><strong>48</strong><span>Evaluaciones realizadas</span></div>
+        <small>Trimestre actual</small>
+      </article>
+    </section>
+
+    <!-- 2. GESTIÓN DE ACTIVIDADES -->
+    <section class="section" id="actividades">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Gestión de actividades</p>
+          <h2>Planifica con propósito</h2>
+        </div>
+        <p>Organiza experiencias que desarrollen habilidades técnicas, colaboración y disfrute por el movimiento.</p>
+      </div>
+
+      <div class="activity-grid">
+        <article class="activity-card activity-featured">
+          <div class="activity-image football" role="img" aria-label="Balón de fútbol sobre un campo deportivo"></div>
+          <div class="activity-content">
+            <div class="activity-top"><span class="activity-tag">Equipo</span><span>60 min</span></div>
+            <h3>Fútbol por estaciones</h3>
+            <p>Desarrollar control del balón, pase preciso y toma de decisiones colectivas.</p>
+            <p class="materials"><b>Materiales:</b> Conos, balones y petos.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image basketball" role="img" aria-label="Balón de baloncesto"></div>
+          <div class="activity-content">
+            <div class="activity-top"><span class="activity-tag">Habilidad</span><span>45 min</span></div>
+            <h3>Baloncesto cooperativo</h3>
+            <p>Mejorar bote, lanzamiento y comunicación mediante retos compartidos.</p>
+            <p class="materials"><b>Materiales:</b> Balones y aros.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image athletics" role="img" aria-label="Pista de atletismo"></div>
+          <div class="activity-content">
+            <div class="activity-top"><span class="activity-tag">Velocidad</span><span>50 min</span></div>
+            <h3>Atletismo lúdico</h3>
+            <p>Practicar salida, desplazamientos rápidos y recepción segura de relevos.</p>
+            <p class="materials"><b>Materiales:</b> Cinta métrica, conos y vallas.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image coordination" role="img" aria-label="Entrenamiento funcional al aire libre"></div>
+          <div class="activity-content">
+            <div class="activity-top"><span class="activity-tag">Coordinación</span><span>40 min</span></div>
+            <h3>Circuito coordinativo</h3>
+            <p>Integrar equilibrio, ritmo, lateralidad y precisión en circuitos variados.</p>
+            <p class="materials"><b>Materiales:</b> Aros, bastones y cuerdas.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image endurance" role="img" aria-label="Estudiantes realizando actividad física al aire libre"></div>
+          <div class="activity-content">
+            <div class="activity-top"><span class="activity-tag">Resistencia</span><span>55 min</span></div>
+            <h3>Aventura aeróbica</h3>
+            <p>Fortalecer resistencia aeróbica con recorridos adaptables y ritmos personales.</p>
+            <p class="materials"><b>Materiales:</b> Mapas, conos y cronómetro.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Propuesta semanal organizada -->
+      <div class="week-plan">
+        <div class="week-title"><span>⌁</span><div><small>ORGANIZACIÓN SEMANAL</small><h3>Semana del 2 al 6 de noviembre</h3></div></div>
+        <ol class="week-days">
+          <li><span>Lun</span><strong>Fútbol por estaciones</strong><small>60 min · Técnica</small></li>
+          <li><span>Mar</span><strong>Circuito coordinativo</strong><small>40 min · Habilidades</small></li>
+          <li><span>Mié</span><strong>Aventura aeróbica</strong><small>55 min · Resistencia</small></li>
+          <li><span>Jue</span><strong>Atletismo lúdico</strong><small>50 min · Velocidad</small></li>
+          <li class="week-highlight"><span>Vie</span><strong>Mini torneo inclusivo</strong><small>60 min · Integración</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. RUTINAS DE ENTRENAMIENTO -->
+    <section class="section routines" id="rutinas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Rutinas de entrenamiento</p>
+          <h2>Movimiento con intención</h2>
+        </div>
+        <p>Una selección de ejercicios graduables para preparar el cuerpo y trabajar capacidades físicas fundamentales.</p>
+      </div>
+
+      <div class="routine-grid">
+        <article class="routine-card">
+          <div class="routine-number">01</div>
+          <div class="routine-icon">☀</div>
+          <p class="routine-type">CALENTAMIENTO</p>
+          <h3>Movilidad activa</h3>
+          <p>Articulaciones, zancadas suaves y desplazamientos progresivos para preparar el aula activa.</p>
+          <div class="routine-meta"><span>8 min</span><span class="level easy">Inicial</span></div>
+        </article>
+        <article class="routine-card">
+          <div class="routine-number">02</div>
+          <div class="routine-icon">↗</div>
+          <p class="routine-type">RESISTENCIA</p>
+          <h3>Intervalos de pista</h3>
+          <p>Ciclos de trote activo y caminata con pausas para recuperar sin perder la continuidad.</p>
+          <div class="routine-meta"><span>12 min</span><span class="level medium">Intermedio</span></div>
+        </article>
+        <article class="routine-card">
+          <div class="routine-number">03</div>
+          <div class="routine-icon">⚡</div>
+          <p class="routine-type">VELOCIDAD</p>
+          <h3>Reacciones rápidas</h3>
+          <p>Salidas desde diferentes posiciones ante estímulos visuales, sonidos o colores.</p>
+          <div class="routine-meta"><span>10 min</span><span class="level medium">Intermedio</span></div>
+        </article>
+        <article class="routine-card">
+          <div class="routine-number">04</div>
+          <div class="routine-icon">◎</div>
+          <p class="routine-type">COORDINACIÓN</p>
+          <h3>Ritmo y precisión</h3>
+          <p>Combinaciones de aros, desplazamientos laterales y lanzamientos hacia objetivos seguros.</p>
+          <div class="routine-meta"><span>15 min</span><span class="level advanced">Desafiante</span></div>
+        </article>
+        <article class="routine-card">
+          <div class="routine-number">05</div>
+          <div class="routine-icon">⌇</div>
+          <p class="routine-type">FLEXIBILIDAD</p>
+          <h3>Estiramiento consciente</h3>
+          <p>Movimientos respirados que favorecen el bienestar y la vuelta a la calma.</p>
+          <div class="routine-meta"><span>8 min</span><span class="level easy">Inicial</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. EVALUACIÓN FÍSICA -->
+    <section class="section evaluation" id="evaluacion">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Evaluación física</p>
+          <h2>Datos que orientan el aprendizaje</h2>
+        </div>
+        <p>Los resultados muestran procesos individuales. Usa la evolución como referencia para brindar apoyo oportuno.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Registro de pruebas físicas · Datos ficticios de demostración</caption>
+          <thead>
+            <tr>
+              <th>Estudiante</th>
+              <th>Salto horizontal</th>
+              <th>Velocidad 20 m</th>
+              <th>Coordinación</th>
+              <th>Resistencia</th>
+              <th>Progreso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="avatar avatar-green">AM</span><strong>Ana Morales</strong></td>
+              <td>1.48 m</td><td>4.2 s</td><td><span class="result-pill good">8.5</span></td><td>11 min</td>
+              <td><div class="table-progress"><span style="--value: 88%"></span><b>88%</b></div></td>
+            </tr>
+            <tr>
+              <td><span class="avatar avatar-blue">JC</span><strong>Juan Cruz</strong></td>
+              <td>1.35 m</td><td>4.5 s</td><td><span class="result-pill good">8.0</span></td><td>10 min</td>
+              <td><div class="table-progress"><span style="--value: 76%"></span><b>76%</b></div></td>
+            </tr>
+            <tr>
+              <td><span class="avatar avatar-orange">LS</span><strong>Lucía Solís</strong></td>
+              <td>1.42 m</td><td>4.3 s</td><td><span class="result-pill medium">7.6</span></td><td>12 min</td>
+              <td><div class="table-progress"><span style="--value: 82%"></span><b>82%</b></div></td>
+            </tr>
+            <tr>
+              <td><span class="avatar avatar-pink">DR</span><strong>Diego Ruiz</strong></td>
+              <td>1.31 m</td><td>4.8 s</td><td><span class="result-pill medium">7.2</span></td><td>9 min</td>
+              <td><div class="table-progress"><span style="--value: 69%"></span><b>69%</b></div></td>
+            </tr>
+            <tr>
+              <td><span class="avatar avatar-purple">MV</span><strong>María Vega</strong></td>
+              <td>1.51 m</td><td>4.1 s</td><td><span class="result-pill good">9.0</span></td><td>13 min</td>
+              <td><div class="table-progress"><span style="--value: 94%"></span><b>94%</b></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="interpretation">
+        <div class="interpretation-icon">i</div>
+        <div><strong>Lectura pedagógica</strong><p>Estos datos permiten identificar avances personales, ajustar apoyos y celebrar los esfuerzos de cada estudiante. No representan una clasificación ni comparación pública.</p></div>
+      </div>
+    </section>
+
+    <!-- 5. RECOMENDACIONES PEDAGÓGICAS -->
+    <section class="section recommendations" id="recomendaciones">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Recomendaciones pedagógicas</p>
+          <h2>Educación física para todos</h2>
+        </div>
+      </div>
+
+      <div class="recommendation-grid">
+        <article><span>01</span><div><h3>Adapta el desafío</h3><p>Modifica tiempo, espacio, velocidad o apoyo según el nivel de cada estudiante. El objetivo debe conservarse.</p></div></article>
+        <article><span>02</span><div><h3>Promueve la inclusión</h3><p>Diseña roles alternativos para que todas las personas participen, colaboren y hagan aportes valiosos al grupo.</p></div></article>
+        <article><span>03</span><div><h3>Fortalece el equipo</h3><p>Combina metas individuales con retos colectivos para desarrollar comunicación, respeto y ayuda mutua.</p></div></article>
+        <article><span>04</span><div><h3>Cuida hábitos saludables</h3><p>Relaciona la actividad física con hidratación, descanso, alimentación, bienestar emocional y una actitud positiva.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página institucional -->
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">S</span><div><strong>SportEdu</strong><small>Plataforma de Gestión y Evaluación</small></div></div>
+    <p>Pedagogía de la Actividad Física y Deporte</p>
+    <p>Fundamentos de Programación</p>
+    <p class="footer-copy">Proyecto académico · 2026</p>
+  </footer>
+</body>
+</html>
