@@ -22,6 +22,7 @@
       <a href="#inicio">Inicio</a>
       <a href="#actividades">Actividades</a>
       <a href="#rutinas">Rutinas</a>
+      <a href="#gestion">Gestión</a>
       <a href="#evaluacion">Evaluación</a>
       <a href="#recomendaciones">Consejos</a>
     </nav>
@@ -217,6 +218,45 @@
       </div>
     </section>
 
+    <!-- Gestión editable de estudiantes y rutinas -->
+    <section class="section class-manager" id="gestion">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Gestión de clase</p>
+          <h2>Estudiantes y rutinas</h2>
+        </div>
+        <p>Agrega estudiantes y selecciona la rutina que corresponde a cada uno. Los cambios se guardan en este navegador.</p>
+      </div>
+
+      <div class="manager-grid">
+        <form class="manager-card" id="student-form">
+          <h3>Nuevo estudiante</h3>
+          <label for="student-name">Nombre completo</label>
+          <input id="student-name" name="studentName" type="text" maxlength="60" placeholder="Ej. Camila Torres" required>
+          <label for="student-group">Grupo</label>
+          <input id="student-group" name="studentGroup" type="text" maxlength="20" placeholder="Ej. 8.º B" required>
+          <button class="button button-primary" type="submit">Agregar estudiante</button>
+        </form>
+
+        <form class="manager-card" id="assignment-form">
+          <h3>Asignar rutina</h3>
+          <label for="student-select">Estudiante</label>
+          <select id="student-select" required></select>
+          <label for="routine-select">Rutina</label>
+          <select id="routine-select" required></select>
+          <button class="button button-primary" type="submit">Guardar asignación</button>
+        </form>
+      </div>
+
+      <div class="assignment-panel">
+        <div class="assignment-heading">
+          <h3>Asignaciones actuales</h3>
+          <button class="clear-button" id="clear-data" type="button">Restablecer datos</button>
+        </div>
+        <div id="assignment-list" class="assignment-list" aria-live="polite"></div>
+      </div>
+    </section>
+
     <!-- 4. EVALUACIÓN FÍSICA -->
     <section class="section evaluation" id="evaluacion">
       <div class="section-heading">
@@ -301,5 +341,6 @@
     <p>Fundamentos de Programación</p>
     <p class="footer-copy">Proyecto académico · 2026</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
